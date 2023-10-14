@@ -55,33 +55,33 @@
 // 3 - Среда
 // 5 - Пятница
 
-//Console.Write("Input day number: ");
-//int dNum = Convert.ToInt32(Console.ReadLine());
-//if(dNum == 1)
-//{
+// Console.Write("Input day number: ");
+// int dNum = Convert.ToInt32(Console.ReadLine());
+// if(dNum == 1)
+// {
 //    Console.WriteLine($"{dNum} -> Понедельник ");
-//} else if(dNum  == 2)
-//{
+// } else if(dNum  == 2)
+// {
 //    Console.WriteLine($"{dNum} -> Вторник ");
-//} else if(dNum  == 3)
-//{
+// } else if(dNum  == 3)
+// {
 //    Console.WriteLine($"{dNum} -> Среда ");
-//} else if(dNum  == 4)
-//{
+// } else if(dNum  == 4)
+// {
 //    Console.WriteLine($"{dNum} -> Четверг ");
-//} else if(dNum  == 5)
-//{
+// } else if(dNum  == 5)
+// {
 //    Console.WriteLine($"{dNum} -> Пятница ");
-//} else if(dNum  == 6)
-//{
+// } else if(dNum  == 6)
+// {
 //    Console.WriteLine($"{dNum} -> Суббота ");
-//} else if(dNum  == 7)
-//{
+// } else if(dNum  == 7)
+// {
 //    Console.WriteLine($"{dNum} -> Воскресенье ");
-//} else
-//{
+// } else
+// {
 //    Console.WriteLine("Invalid input");
-//}
+// }
 
 // Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
 
@@ -90,15 +90,16 @@
 // a = 9; b = -3 -> да
 // a = -3; b = 9 -> нет
 
-Console.Write("Input first number: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input second number: ");
-int b = Convert.ToInt32(Console.ReadLine());
-if(b * b == a)
-{
-    Console.WriteLine($"{a} is quad of {b}");
-}
-else
-{
-    Console.WriteLine($"{a} is not quad of {b}");
-}
+// Console.Write("Input first number: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input second number: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// if(b * b == a)
+// {
+//     Console.WriteLine($"{a} is quad of {b}");
+// }
+// else
+// {
+//     Console.WriteLine($"{a} is not quad of {b}");
+// }
+
