@@ -151,3 +151,37 @@
 //     }
 // }
 
+
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное число
+// и на выходе показывает вторую цифру этого числа.
+
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+
+
+// void ThreeDigitNumbers()
+// {
+//     Console.Write("Enter a three-digit number: ");
+//     int number = Convert.ToInt32(Console.ReadLine());
+//     if(number >= 100 && number <= 999)
+//     {
+//     int units = number / 10;
+//     int hundreds = units % 10;
+//     Console.WriteLine($"{number} -> {hundreds}");
+//     }
+//     else
+//     {
+//     Console.WriteLine("Invalid input");
+//     }
+// }
+// ThreeDigitNumbers();
+
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели,
+//  и проверяет, является ли этот день выходным.
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+
