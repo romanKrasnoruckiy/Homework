@@ -64,3 +64,46 @@
 // int randomNum = new Random().Next(10, 99 + 1);
 // int biggestDigit = FindBiggestDigit(randomNum);
 // Console.WriteLine($"{randomNum} -> {biggestDigit}");
+
+
+// Напишите программу, которая принимает на
+// вход число и проверяет, кратно ли оно
+// одновременно 7 и 23
+
+// 14 -> нет
+// 46 -> нет
+// 161 -> да
+
+
+// bool CheckMiltiplicity(int num)
+// {
+//     if(num % 7 == 0 && num % 23 == 0)
+//     return true;
+//     else
+//     return false;
+// }
+    
+// Console.Write("Input first num: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// bool multiple = CheckMiltiplicity(num);
+// Console.WriteLine($"{num} -> {multiple}");
+
+
+//  Напишите программу, которая принимает на
+// вход два числа и проверяет, является ли одно
+// число квадратом другого.
+// 5, 25 -> да
+// -4, 16 -> да
+// 25, 5 -> да
+// 8,9 -> нет
+
+// void CheckSquare(int num1, int num2)
+// {
+//     if(num1 == num2 * num2)
+//     Console.WriteLine("Является");
+//     else
+//     Console.WriteLine("Не является");
+// }
+
+// CheckSquare(25, 5);
+
