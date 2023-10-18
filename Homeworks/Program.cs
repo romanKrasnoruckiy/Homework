@@ -16,7 +16,7 @@
 //         {
 //             Console.WriteLine($"Введенные числа равны `{firstNumber}`");
 //         }
-                
+
 //     }
 
 
@@ -44,7 +44,7 @@
 // using System;
 
 // public class Answer {
-    
+
 //   static int FindMax(int a, int b, int c)
 //     {
 //        int max = a;
@@ -99,7 +99,7 @@
 
 
 //     }
-  
+
 
 //   // Не удаляйте и не меняйте метод Main! 
 //     static public void Main(string[] args) {
@@ -131,7 +131,7 @@
 //         {
 //             Console.Write($"{count}\t");
 //         }
-          
+
 //     }
 
 
@@ -184,4 +184,67 @@
 // 7 -> да
 // 1 -> нет
 
+// void CheckDayOfWeek()
+// {
+//     Console.Write("Input day number: ");
+//     int dNum = Convert.ToInt32(Console.ReadLine());
+//     if(dNum == 1)
+//     {
+//     Console.WriteLine($"{dNum} -> Понедельник - не является выходным днём");
+//     } else if(dNum  == 2)
+//     {
+//     Console.WriteLine($"{dNum} -> Вторник - не является выходным днём");
+//     } else if(dNum  == 3)
+//     {
+//     Console.WriteLine($"{dNum} -> Среда - не является выходным днём");
+//     } else if(dNum  == 4)
+//     {
+//     Console.WriteLine($"{dNum} -> Четверг - не является выходным днём");
+//     } else if(dNum  == 5)
+//     {
+//     Console.WriteLine($"{dNum} -> Пятница - не является выходным днём");
+//     } else if(dNum  == 6)
+//     {
+//     Console.WriteLine($"{dNum} -> Суббота - является выходным днём");
+//     } else if(dNum  == 7)
+//     {
+//     Console.WriteLine($"{dNum} -> Воскресенье - является выходным днём");
+//     } else
+//     {
+//     Console.WriteLine("Invalid input");
+//     }
+
+// }
+// CheckDayOfWeek();
+
+
+// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает,
+//  что третьей цифры нет.
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -> 6
+
+
+// int ThirdDigit()
+// {
+//     Console.Write("Input number: ");
+//     int number = Convert.ToInt32(Console.ReadLine());
+//     if(number < 100)
+//     {
+//         Console.WriteLine("Третьей цифры нет");
+//     }
+//     else
+//     {
+//         while(number > 999)
+//         {
+//             number /= 10;
+//             Console.WriteLine($"Третья цифра из числа будет -> {number % 10}");
+//         }
+//         return number % 10;
+    
+//     }
+//     return number % 10;
+    
+// }
+// ThirdDigit();
 
