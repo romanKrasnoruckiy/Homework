@@ -23,16 +23,16 @@
 
 //   918 -> 8
 
-//Console.Write("Input three-digit number: ");
-//int num = Convert.ToInt32(Console.ReadLine());
-//if(num >= 100 && num <= 999)
-//{
+// Console.Write("Input three-digit number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if(num >= 100 && num <= 999)
+// {
 //    Console.WriteLine($"{num} -> {num % 10}");
-//}
-//else
-//{
+// }
+// else
+// {
 //    Console.WriteLine("Invalid input");
-//}
+// }
 
 // Напишите программу , которая на вход принимает одно число (N), а на выходе показывает 
 // все целые числа в промежутке от -N до N.
