@@ -58,3 +58,43 @@
 //     PrintArray(myArray);
 
 
+// Задача 28: Напишите программу, которая
+// принимает на вход число N и выдаёт
+// произведение чисел от 1 до N.
+// 4 -> 24
+// 5 -> 120
+
+// int Factorial(int n)
+// {
+//     int fact = 1;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         fact = fact * (i);
+//     }
+//     return fact;
+// }
+
+// Console.Write("Input N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(Factorial(n));
+
+// Задача 24: Напишите программу, которая
+// принимает на вход число (А) и выдаёт сумму чисел
+// от 1 до А.
+// 7 -> 28
+// 4 -> 10
+// 8 -> 36
+
+// int Number(int a)
+// {
+//     int num = 0;
+//     for (int i = 1; i <= a; i++)
+//     {
+//         num = num + i;
+//     }
+//     return num;
+// }
+
+// Console.Write("Input A: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(Number(a));
