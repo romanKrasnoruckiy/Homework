@@ -261,13 +261,26 @@
 
 // ПРИНИМАЕТ число!!! ПРОВЕРЯЕТ:  1) палиндром 2) 5 знач.!!! 2 МЕТОДА
 
+
+
 using System;
 
 public class Answer
 {
     static bool IsPalindrome(int number){
       // Введите свое решение ниже
-      
+        int num5 = number % 10;
+        int num4 = number / 10 % 10;
+        int num2 = number / 1000 % 10;
+        int num1 = number / 10000;
+        if(number >= 10000 && number <= 99999);
+        else if(num1 == num5 && num2 == num4) return true;
+        else if(num1 != num5 && num2 != num4) return false;
+        else
+        Console.WriteLine($"{number} -> Число не пятизначное");
+        Console.WriteLine("False"); 
+        
+        
     }
   
   // Не удаляйте и не меняйте метод Main! 
