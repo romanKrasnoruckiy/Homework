@@ -47,3 +47,56 @@
 
 // Console.WriteLine($"A({xa}, {ya}), B({xb}, {yb}) -> {FindDistance(xa, ya, xb, yb)}");
 
+
+// Задача 18: Напишите программу, которая по
+// заданному номеру четверти, показывает
+// диапазон возможных координат точек в этой
+// четверти (x и y).
+
+// void FindQuarter(int a)
+// {
+//     if(a == 1)
+//     {
+//         Console.WriteLine("x+, y+");
+//     }
+//     else if(a == 2)
+//     {
+//         Console.WriteLine("x-, y+");
+//     }
+//     else if(a == 3)
+//     {
+//         Console.WriteLine("x-, y-");
+//     }
+//     else if(a == 4)
+//     {
+//         Console.WriteLine("x+, y-");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Такой четверти не существует");
+//     }
+
+// }
+// Console.Write("Введите номер четверти: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// FindQuarter(a);
+
+
+// Задача 22: Напишите программу, которая
+// принимает на вход число (N) и выдаёт таблицу
+// квадратов чисел от 1 до N.
+// 5 -> 1, 4, 9, 16, 25.
+// 2 -> 1,4
+
+// void SqearesTable(int n)
+// {
+//     int current = 1;
+//     while (current <= n)
+//     {
+//         Console.Write($"{current * current}, ");
+//         current++;
+//     }
+// }
+// Console.Write("Введите N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// SqearesTable(n);
