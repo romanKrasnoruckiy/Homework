@@ -261,27 +261,45 @@
 
 
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 public class Answer
 {
     static bool IsPalindrome(int number){
       // Введите свое решение ниже
-        if(number >= 10000 && number <= 99999)
-        {
-          int num5 = number % 10;
-          int num4 = number / 10 % 10;
-          int num2 = number / 1000 % 10;
-          int num1 = number / 10000;
-          Console.Write($"{number} -> ");
-          if(num1 == num5 && num2 == num4)
-          return true;
-          else
-          return false;
 
+       if (number < 10000 || number >= 100000){
+            Console.WriteLine("Число не пятизначное");
+            return false;
         }
-        else
-        Console.WriteLine($"{number} -> Число не пятизначное");
-        return false;
+
+        int reverse = 0;
+        int temp = number;
+        while (temp > 0){
+            reverse = reverse * 10 + temp % 10;
+            temp /= 10;
+        }
+        return reverse == number;
+    
+    
+        // if(number >= 10000 && number <= 99999)
+        // {
+        //   int n5 = number % 10;
+        //   int n4 = number / 10 % 10;
+        //   int n3 = number /100 % 10;
+        //   int n2 = number / 1000 % 10;
+        //   int n1 = number / 10000;
+        //   Console.Write($"{number} -> ");
+    
+        //   if(n1 == n5 || n2 == n4)
+        //   return true;
+        //   else
+        //   return false;
+                
+        // }
+        // else
+        // Console.WriteLine($"{number} -> Число не пятизначное");
+        // return false;
         
         
     }
