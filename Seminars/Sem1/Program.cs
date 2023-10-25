@@ -102,4 +102,3 @@
 // {
 //     Console.WriteLine($"{a} is not quad of {b}");
 // }
-
