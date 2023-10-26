@@ -260,26 +260,26 @@
 //                      False
 
 
-using System;
-using System.Diagnostics.CodeAnalysis;
+// using System;
+// using System.Diagnostics.CodeAnalysis;
 
-public class Answer
-{
-    static bool IsPalindrome(int number){
-      // Введите свое решение ниже
+// public class Answer
+// {
+//     static bool IsPalindrome(int number){
+//       // Введите свое решение ниже
 
-       if (number < 10000 || number >= 100000){
-            Console.WriteLine("Число не пятизначное");
-            return false;
-        }
+//        if (number < 10000 || number >= 100000){
+//             Console.WriteLine("Число не пятизначное");
+//             return false;
+//         }
 
-        int reverse = 0;
-        int temp = number;
-        while (temp > 0){
-            reverse = reverse * 10 + temp % 10;
-            temp /= 10;
-        }
-        return reverse == number;
+//         int reverse = 0;
+//         int temp = number;
+//         while (temp > 0){
+//             reverse = reverse * 10 + temp % 10;
+//             temp /= 10;
+//         }
+//         return reverse == number;
     
     
         // if(number >= 10000 && number <= 99999)
@@ -302,22 +302,66 @@ public class Answer
         // return false;
         
         
-    }
+    // }
   
   // Не удаляйте и не меняйте метод Main! 
-      static public void Main(string[] args) {
-        int number;
+//       static public void Main(string[] args) {
+//         int number;
 
-        if (args.Length >= 1) {
-            number = int.Parse(args[0]);
-        } else {
-           // Здесь вы можете поменять значения для отправки кода на Выполнение
-            number = 64546;
-        }
+//         if (args.Length >= 1) {
+//             number = int.Parse(args[0]);
+//         } else {
+//            // Здесь вы можете поменять значения для отправки кода на Выполнение
+//             number = 64546;
+//         }
 
-        // Не удаляйте строки ниже
-        bool result = IsPalindrome(number);
-        System.Console.WriteLine($"{result}");
-    }
-}
+//         // Не удаляйте строки ниже
+//         bool result = IsPalindrome(number);
+//         System.Console.WriteLine($"{result}");
+//     }
+// }
+
+
+
+
+// Внутри класса Answer напишите метод ShowCube, который принимает на вход число (N) 
+// и выводит таблицу кубов чисел от 1 до N (включительно) каждое на новой строке.
+
+// using System;
+
+// public class Answer
+// {
+//    static void ShowCube(int N)
+//     {
+//       // Введите свое решение ниже
+
+//        for (int i = 1; i<= N ;i++)
+//         {
+//             int k = i*i*i;
+//             Console.WriteLine(k);
+//         }
+        
+//     }
+
+//   // Не удаляйте и не меняйте метод Main! 
+//       static public void Main(string[] args) {
+//         int N;
+
+//         if (args.Length >= 1) {
+//             N = int.Parse(args[0]);
+//         } else {
+//            // Здесь вы можете поменять значения для отправки кода на Выполнение
+//             N = 6;
+//         }
+
+//         // Не удаляйте строки ниже
+//         ShowCube(N);
+//     }
+// }
+
+
+
+
+
+
 
