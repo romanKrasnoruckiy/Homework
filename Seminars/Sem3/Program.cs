@@ -29,23 +29,23 @@
 // A (3,6); B (2,1) -> 5,09
 // A (7,-5); B (1,-1) -> 7,21
 
-// double FindDistance(double xa, double ya, double xb, double yb)
-// {
-//     double result = Math.Round(Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2)), 2);
-//     return result;
-//     // или: return Math.Round(Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2)), 2);
-// }
+double FindDistance(double xa, double ya, double xb, double yb)
+{
+    double result = Math.Round(Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2)), 2);
+    return result;
+    // или: return Math.Round(Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2)), 2);
+}
 
-// Console.Write("Input XA: ");
-// double xa = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Input YA: ");
-// double ya = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Input XB: ");
-// double xb = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Input YB: ");
-// double yb = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input XA: ");
+double xa = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input YA: ");
+double ya = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input XB: ");
+double xb = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input YB: ");
+double yb = Convert.ToDouble(Console.ReadLine());
 
-// Console.WriteLine($"A({xa}, {ya}), B({xb}, {yb}) -> {FindDistance(xa, ya, xb, yb)}");
+Console.WriteLine($"A({xa}, {ya}), B({xb}, {yb}) -> {FindDistance(xa, ya, xb, yb)}");
 
 
 // Задача 18: Напишите программу, которая по
