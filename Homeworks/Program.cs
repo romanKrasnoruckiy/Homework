@@ -241,10 +241,10 @@
 //             Console.WriteLine($"Третья цифра из числа будет -> {number % 10}");
 //         }
 //         return number % 10;
-    
+
 //     }
 //     return number % 10;
-    
+
 // }
 // ThirdDigit();
 
@@ -280,31 +280,31 @@
 //             temp /= 10;
 //         }
 //         return reverse == number;
-    
-    
-        // if(number >= 10000 && number <= 99999)
-        // {
-        //   int n5 = number % 10;
-        //   int n4 = number / 10 % 10;
-        //   int n3 = number /100 % 10;
-        //   int n2 = number / 1000 % 10;
-        //   int n1 = number / 10000;
-        //   Console.Write($"{number} -> ");
-    
-        //   if(n1 == n5 || n2 == n4)
-        //   return true;
-        //   else
-        //   return false;
-                
-        // }
-        // else
-        // Console.WriteLine($"{number} -> Число не пятизначное");
-        // return false;
-        
-        
-    // }
-  
-  // Не удаляйте и не меняйте метод Main! 
+
+
+// if(number >= 10000 && number <= 99999)
+// {
+//   int n5 = number % 10;
+//   int n4 = number / 10 % 10;
+//   int n3 = number /100 % 10;
+//   int n2 = number / 1000 % 10;
+//   int n1 = number / 10000;
+//   Console.Write($"{number} -> ");
+
+//   if(n1 == n5 || n2 == n4)
+//   return true;
+//   else
+//   return false;
+
+// }
+// else
+// Console.WriteLine($"{number} -> Число не пятизначное");
+// return false;
+
+
+// }
+
+// Не удаляйте и не меняйте метод Main! 
 //       static public void Main(string[] args) {
 //         int number;
 
@@ -340,7 +340,7 @@
 //             int k = i*i*i;
 //             Console.WriteLine(k);
 //         }
-        
+
 //     }
 
 //   // Не удаляйте и не меняйте метод Main! 
@@ -366,71 +366,118 @@
 // A (3,6,8); B (2,1,-7) -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-using System;
+// using System;
 
-public class Answer
-{
-    private static double Length(int[] pointA, int[] pointB)
-    {
-      // Введите свое решение ниже
-       
-        double FindDistance(double x1, double x2,double x3, double y1, double y2, double y3)
-        {
-        double result = Math.Round(Math.Sqrt(Math.Pow(y1 - x1, 2) + Math.Pow(y2 - x2, 2) + Math.Pow(y3 - x3, 2)), 2);
-        return result;
-        // или: return Math.Round(Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2)), 2);
-        }
+// public class Answer
+// {
+//     private static double Length(int[] pointA, int[] pointB)
+//     {
+//       // Введите свое решение ниже
+//       int x1 = pointA[0];
+//       int y1 = pointA[1];
+//       int z1 = pointA[2];
 
-        // Console.Write("Input XA: ");
-        // double xa = Convert.ToDouble(Console.ReadLine());
-        // Console.Write("Input YA: ");
-        // double ya = Convert.ToDouble(Console.ReadLine());
-        // Console.Write("Input ZA: ");
-        // double za = Convert.ToDouble(Console.ReadLine());
-        // Console.Write("Input XB: ");
-        // double xb = Convert.ToDouble(Console.ReadLine());
-        // Console.Write("Input YB: ");
-        // double yb = Convert.ToDouble(Console.ReadLine());
-        // Console.Write("Input ZB: ");
-        // double zb = Convert.ToDouble(Console.ReadLine());
+//       int x2 = pointB[0];
+//       int y2 = pointB[1];
+//       int z2 = pointB[2];
 
+//       double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
+//       return distance;
 
+//     }
 
-        Console.WriteLine($"A({x1}, {x2}, {x3}), B({y1}, {y2}, {y3}) -> {FindDistance(x1, x2, x3, y1, y2, y3)}");
+//   // Не удаляйте и не меняйте метод Main! 
+//     public static void Main(string[] args) {
+//         int x1, x2, x3, y1, y2, y3;
 
+//         if (args.Length >= 6) {
+//             x1 = int.Parse(args[0]);
+//             x2 = int.Parse(args[1]);
+//             x3 = int.Parse(args[2]);
+//             y1 = int.Parse(args[3]);
+//             y2 = int.Parse(args[4]);
+//             y3 = int.Parse(args[5]);
+//         } else {
+//            // Здесь вы можете поменять значения для отправки кода на Выполнение
+//             x1 = 3;
+//             x2 = 6;
+//             x3 = 8;
+//             y1 = 2;
+//             y2 = 1;
+//             y3 = -7;
+//         }
 
-    }
-
-  // Не удаляйте и не меняйте метод Main! 
-    public static void Main(string[] args) {
-        int x1, x2, x3, y1, y2, y3;
-
-        if (args.Length >= 6) {
-            x1 = int.Parse(args[0]);
-            x2 = int.Parse(args[1]);
-            x3 = int.Parse(args[2]);
-            y1 = int.Parse(args[3]);
-            y2 = int.Parse(args[4]);
-            y3 = int.Parse(args[5]);
-        } else {
-           // Здесь вы можете поменять значения для отправки кода на Выполнение
-            x1 = 3;
-            x2 = 6;
-            x3 = 8;
-            y1 = 2;
-            y2 = 1;
-            y3 = -7;
-        }
-
-        // Не удаляйте строки ниже
-        double result = Length(new int[]{x1, x2, x3}, new int[]{y1, y2, y3});
-        Console.WriteLine($"{result:F2}");
-    }
-}
+//         // Не удаляйте строки ниже
+//         double result = Length(new int[]{x1, x2, x3}, new int[]{y1, y2, y3});
+//         Console.WriteLine($"{result:F2}");
+//     }
+// }
 
 
+// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и 
+// возводит число A в натуральную степень B.
+// 3, 5 -> 243 (3⁵)
+// 2, 4 -> 16
+
+// int Numbers(int a, int b)
+// {
+//   int result = 1;
+//   for (int i = 1; i <= b; i++)
+//   {
+//     result = result * a;
+//   }
+//   return result;
+
+//   }
+
+// Console.Write("Input first number: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input second number: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(Numbers(a, b));
 
 
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
 
 
+// int DigitConter(int num)
+// {
+//   int result = 0;
+//   while (num > 0)
+//   {
+//     result = result + num % 10;
+//     num /= 10;
+//   }
+//   return result;
+
+// }
+
+
+// Console.Write("Input num: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine(num + " -> " + DigitConter(num));
+
+
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
+
+
+// int[] array = new int[8];
+// array[0] = 15;
+// array[1] = 8;
+// array[2] = 3;
+// array[3] = 41;
+// array[4] = 7;
+// array[5] = 19;
+// array[6] = 11;
+// array[7] = 17;
+// for (int i = 0; i < array.Length; i++)
+// {
+//   Console.Write($"{array[i]}, ");
+// }
 
