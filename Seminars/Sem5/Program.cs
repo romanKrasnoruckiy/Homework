@@ -103,3 +103,101 @@
 
 //     PrintArray(myArray);
 //     Console.WriteLine(Counter(myArray, min, max));
+
+
+// Задача 33: Задайте массив. Напишите программу, которая
+// определяет, присутствует ли заданное число в массиве.
+// 4; массив [6, 7, 19, 345, 3] -> нет
+// -3; массив [6, 7, 19, 345, 3] -> да
+
+
+//  int[] CreateRandomArray(int size, int minValue, int maxValue)
+// {
+//      int[] array = new int[size];
+//      for(int i = 0; i < size; i++)
+//      {
+//         array[i] = new Random().Next(minValue, maxValue + 1);
+//      }
+//      return array;
+// }
+
+//  void PrintArray(int[] array)
+//  {
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// bool FindNumber(int[] array, int num)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i] == num)
+//         return true;
+//     }
+//     return false;
+// }
+
+//     Console.Write("Input array size: ");
+//     int size = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Input minimal value: ");
+//     int minValue = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Input maximal value: ");
+//     int maxValue = Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine("Input num: ");
+//     int num = Convert.ToInt32(Console.ReadLine());
+
+
+//     int[] myArray = CreateRandomArray(size, minValue, maxValue);
+//     PrintArray(myArray);
+//     Console.WriteLine($"{num} -> {FindNumber(myArray, num)} ");
+
+
+// Задача 32: Напишите программу замена элементов
+// массива: положительные элементы замените на
+// соответствующие отрицательные, и наоборот.
+// [-4, -8, 8, 2] -> [4, 8, -8, -2] 
+
+//  int[] CreateRandomArray(int size, int minValue, int maxValue)
+// {
+//      int[] array = new int[size];
+//      for(int i = 0; i < size; i++)
+//      {
+//         array[i] = new Random().Next(minValue, maxValue + 1);
+//      }
+//      return array;
+// }
+
+//  void PrintArray(int[] array)
+//  {
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// void Reverse(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//     array[i] = array[i] * (-1);
+//     }
+// }
+
+//     Console.Write("Input array size: ");
+//     int size = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Input minimal value: ");
+//     int minValue = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Input maximal value: ");
+//     int maxValue = Convert.ToInt32(Console.ReadLine());
+
+//     int[] myArray = CreateRandomArray(size, minValue, maxValue);
+//     PrintArray(myArray);
+//     Reverse(myArray);
+//     PrintArray(myArray);
+
+
+
